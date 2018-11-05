@@ -11,7 +11,7 @@ node('master')
     }
     stage('ContinuousDeployment-Feature1')
     {
-        sh 'scp /home/vagrant/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war vagrant@10.0.0.5:/var/lib/tomcat7/webapps/qaenv.war'
+        sh 'scp /home/vagrant/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war vagrant@10.0.0.5:/var/lib/tomcat7/webapps/feature1.war'
     }
     stage('ContinuousTesting-Feature1')
     {
